@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact - Valley Institute And Education</title>
+
+   <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Web icon ko lagi -->
+    <link rel="icon" href="images/valley.png">
+
+
+</head>
+<body>
+    
+<div class="container">
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/valley.png" class="logo-img"> Valley<span>Institute</span>
+        </a>
+    
+        <div id="menu" class="fas fa-bars"></div>
+    
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="course.html">Course</a>
+            <a href="admision.html">Inquiry</a>
+            <a href="contact.html">Contact</a>
+            <div class="dropdown">
+                <a href="" class="navbar">About Us</a>
+                <div class="dropdown-content">  
+                    <a href="about.html">Teams</a>
+                    <a href="teacher.html">Teachers</a>
+                    <a href="review.html">Review</a>
+                    <a href="gallery.html">Gallery</a>
+                </div>
+            </div>
+        </nav>
+    
+    </header>
+
+<!-- contact section  -->
+<section class="contact">
+
+    <h1 class="heading"> Get in touch </h1>
+ 
+    <div class="icons-container">
+ 
+       <div class="icons">
+          <i class="fas fa-clock"></i>
+          <h3>opening hours :</h3>
+          <p>05:00am to 10:00pm</p>
+       </div>
+ 
+       <div class="icons">
+          <i class="fas fa-phone"></i>
+          <h3>phone :</h3>
+          <p>01-5364716</p>
+          <p>9851359566</p>
+          <p>9801204417/18 </p>
+       </div>
+ 
+       <div class="icons">
+          <i class="fas fa-envelope"></i>
+          <h3> email : </h3>
+          <p>valleyinstitute15@gmail.com</p>
+       </div>
+ 
+       <div class="icons">
+          <i class="fas fa-map"></i>
+          <h3>address :</h3>
+          <p>(Near by Sankhar Dev Campus and Opposite site of Tarkari Bajar)</p>
+          <p>Bagbajar-28, Kathmandu</p>
+       </div>
+ 
+    </div>
+ 
+    <div class="row">
+ 
+        <div class="image">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3532.4475379302608!2d85.31851627403381!3d27.703465125665286!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39eb19a9b3c3929b%3A0x4c3024fdc2334359!2sKTM%20VALLEY%20INSTITUTE%20%26%20publication!5e0!3m2!1sen!2snp!4v1718108489242!5m2!1sen!2snp"
+            width="350" height="450" style="border: 8px;" class="responsive" allowfullscreen="" 
+            loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        
+        <form name="submit-to-google-sheet">
+        
+            <div class="inputBox">
+                <h1 class="heading">Message Us</h1>
+                <input type="text" name="Name" placeholder="Your Full Name">
+                <input type="number" name="Phone" placeholder="Your Phone Number">
+                <input type="email" name="Email" placeholder="Your Email">
+                <textarea placeholder="Your Message" name="Message" id="" cols="30" rows="10" class="box"></textarea>
+                <input type="submit" class="btn" value="Send" >
+            </div>  
+            <span class="success" id="success"></span>  
+        </form>
+        
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbz5M03L-NpUak5EvBF9poLhBSNE9XHb5QtsrMWHoNz_qx0ZiL3Dm69fuxBRujyjN5mG/exec'
+    const form = document.forms['submit-to-google-sheet']
+const success = document.getElementById('success');
+form.addEventListener('submit', e => {
+  e.preventDefault()
+  fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+    .then(response => {
+        success.innerHTML="Submit Successfully";
+        setTimeout(function()
+    {
+        success.innerHTML="Submit Successfully";
+    },5000)
+    form.reset();
+    })
+    .catch(error => console.error('Error!', error.message))
+})
+</script>
+    </div>
+ 
+ </section>
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>About us</h3>
+            <p>As dedicated academicians, our brand, standards, and long-term vision are a testament to the invaluable knowledge, cooperation, and 
+                trust provided by numerous advisors, experts, and specialists across diverse fields.
+                 Their unwavering support and expertise have been the cornerstone of our success.</p>
+        </div>
+
+       <!-- quick services ko link haru  -->
+       <div class="box">
+        <h3>Quick links</h3>
+        <a href="about.html">Teams</a>
+        <a href="teacher.html">Teachers</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="review.html">Review</a>
+    </div>
+
+         <!--Social media ko lagi hai ta-->
+         <div class="box">
+            <h3>Follow us</h3>
+            <a href="https://www.facebook.com/valleyinstitute">facebook</a>
+            <a href="https://www.instagram.com/institutevalley">instagram</a>
+        </div>
+
+
+        <!--Contact Detail KO lagi-->
+        <div class="box">
+            <h3>Contact Us</h3>
+           <p> <i class="fas fa-phone"></i> 01-5364716 </p>
+           <p> <i class="fas fa-envelope"></i> valleyinstitute15@gmail.com </p>
+           <p> <i class="fas fa-map-marker-alt"></i> Putalisadak, Kathmandu </p>
+        </div>
+
+    </div>
+
+    <div class="credit">Copyright © <a href="https://www.facebook.com/valleyinstitute/">K.T.M Valley Institute and Publication Pvt. Ltd.</a> |
+        All rights reserved <br>Powered By <a href="https://www.facebook.com/NebulaPixel">NebulaPixel Production</a>
+   </div>
+</section>
+
+</div>
+
+
+
+
+
+<!-- custom js file link ko lagi -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

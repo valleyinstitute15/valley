@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Valley Institute And Education</title>
+    <meta name="description" content="WELCOME TO THE VALLEY INSTITUTE. Unlock Your Potential With Us">
+    <script>
+        // Create and append the viewport meta tag
+        const viewportMeta = document.createElement('meta');
+        viewportMeta.name = "viewport";
+        viewportMeta.content = "width=device-width, initial-scale=1.0";
+        document.head.appendChild(viewportMeta);
+
+        // Create and append the description meta tag
+        const descriptionMeta = document.createElement('meta');
+        descriptionMeta.name = "description";
+        descriptionMeta.content = "WELCOME TO THE VALLEY INSTITUTE. Unlock Your Potential With Us";
+        document.head.appendChild(descriptionMeta);
+
+        // Create and append the JSON-LD script tag
+        const jsonLdScript = document.createElement('script');
+        jsonLdScript.type = "application/ld+json";
+        jsonLdScript.text = JSON.stringify({
+            "@context": "https://schema.org",
+            "@type": "Organization",
+            "name": "VALLEY INSTITUTE",
+            "url": "https://www.valleyinstitute.com.np",
+            "description": "As academicians, we have our own brand, standard, and long visions to which so many advisors, experts, and specialists in various fields have contributed their invaluable knowledge, cooperation and trust from the backdrop."
+        });
+        document.head.appendChild(jsonLdScript);
+    </script>
+
+    <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Animation ko lagi -->
+     <link rel="stylesheet" href="css/animate.min.css">
+
+    <!-- Web icon ko lagi -->
+    <link rel="icon" href="images/valley.png">
+
+</head>
+<body>
+    
+<div class="container">
+
+<header>
+    <a href="index.html" class="logo">
+        <img src="images/valley.png" class="logo-img"> Valley<span>Institute</span>
+    </a>
+
+    <div id="menu" class="fas fa-bars"></div>
+
+    <nav class="navbar">
+        <a href="index.html">Home</a>
+        <a href="course.html">Course</a>
+        <a href="admision.html">Inquiry</a>
+        <a href="contact.html">Contact</a>
+        <div class="dropdown">
+            <a href="" class="navbar">About Us</a>
+            <div class="dropdown-content">  
+                <a href="about.html">Teams</a>
+                <a href="teacher.html">Teachers</a>
+                <a href="review.html">Review</a>
+                <a href="gallery.html">Gallery</a>
+            </div>
+        </div>
+    </nav>
+
+</header><marquee behavior="scroll" direction="left"
+onmouseover="this.stop();"
+onmouseout="this.start();"
+scrollamount=02;><h2>As academicians, we have our own brand, standard, and long visions to which so many advisors, 
+    experts, and specialists in various fields have contributed their invaluable knowledge, 
+    cooperation and trust from the backdrop.</h2></marquee>
+    
+
+
+<!-- home section  -->
+
+<section class="home">
+
+    <div class="content">
+
+        
+        <h3 class=" in-left">Unlock Your Potential With Us!</h3>
+        <p class="in-left">As academicians, we have our own brand, standard, and long visions to which so many advisors, 
+            experts, and specialists in various fields have contributed their invaluable knowledge, 
+            cooperation and trust from the backdrop.</p>
+        <a href="course.html"  class="fade-in-text btn" >Get started</a>
+    </div>
+
+    <div class="image">
+        <img src="images/home-pic.png" class="fade-in-text" >
+    </div>
+
+</section>
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>About us</h3>
+            <p>As dedicated academicians, our brand, standards, and long-term vision are a testament to the invaluable knowledge, cooperation, and 
+                trust provided by numerous advisors, experts, and specialists across diverse fields.
+                 Their unwavering support and expertise have been the cornerstone of our success.</p>
+        </div>
+
+        <!-- quick services ko link haru  -->
+        <div class="box">
+            <h3>Quick links</h3>
+            <a href="about.html">Teams</a>
+            <a href="teacher.html">Teachers</a>
+            <a href="gallery.html">Gallery</a>
+            <a href="review.html">Review</a>
+        </div>
+
+        <!--Social media ko lagi hai ta-->
+        <div class="box">
+            <h3>Follow us</h3>
+            <a href="https://www.facebook.com/valleyinstitute">facebook</a>
+            <a href="https://www.instagram.com/institutevalley">instagram</a>
+        </div>
+
+        <!--Contact Detail KO lagi-->
+        <div class="box">
+            <h3>Contact Us</h3>
+           <p> <i class="fas fa-phone"></i> 01-5364716 </p>
+           <p> <i class="fas fa-envelope"></i> valleyinstitute15@gmail.com </p>
+           <p> <i class="fas fa-map-marker-alt"></i> Putalisadak, Kathmandu </p>
+        </div>
+
+    </div>
+
+    <div class="credit">Copyright © <a href="https://www.facebook.com/valleyinstitute/">K.T.M Valley Institute and Publication Pvt. Ltd.</a> |
+        All rights reserved <br>Powered By <a href="https://www.facebook.com/NebulaPixel">NebulaPixel Production</a>
+   </div>
+</section>
+
+</div>
+
+
+<!-- custom js file link garna ko lagi -->
+<script src="js/script.js"></script>
+
+</body>
+</html>

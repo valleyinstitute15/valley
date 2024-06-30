@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inquary - Valley Institute And Education</title>
+
+    <!-- font awesome cdn link  -->
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+   
+    <!-- custom css file link  -->
+    <link rel="stylesheet" href="css/style.css">
+    
+    <!-- Web icon ko lagi -->
+    <link rel="icon" href="images/valley.png">
+
+
+</head>
+<body>
+    
+<div class="container">
+
+    <header>
+        <a href="index.html" class="logo">
+            <img src="images/valley.png" class="logo-img"> Valley<span>Institute</span>
+        </a>
+    
+        <div id="menu" class="fas fa-bars"></div>
+    
+        <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="course.html">Course</a>
+            <a href="admision.html">Inquiry</a>
+            <a href="contact.html">Contact</a>
+            <div class="dropdown">
+                <a href="" class="navbar">About Us</a>
+                <div class="dropdown-content">  
+                    <a href="about.html">Teams</a>
+                    <a href="teacher.html">Teachers</a>
+                    <a href="review.html">Review</a>
+                    <a href="gallery.html">Gallery</a>
+                </div>
+            </div>
+        </nav>
+    
+    </header>
+
+    <section class="contact">
+        <h1 class="heading">Student Inquary</h1>
+        <div class="row">
+            <div class="image">
+                <img src="images/valley.png" width="350" height="450" style="border: 8px;" class="responsive" >
+            </div>
+            
+            <form name="submit-to-google-sheet" method="post">
+            
+                <div class="inputBox">
+                    <h1 class="heading"><u>Student Detail</u></h1>
+                    <input type="hidden" name="access_key" value="    ">
+                    <input type="text" name="Name" placeholder="Your Full Name" required>
+                    <input type="text" name="Address" placeholder="Address" >
+                    <input type="number" name="Phone" placeholder="Your Phone Number" required>
+                    <input type="text" name="Course" placeholder="Enter Course Name" >
+                    <input type="text" name="Year/Semester" placeholder="Year/Semester">
+                    <input type="text" name="College" placeholder="College Name">
+                    <input type="text" name="Time" placeholder="Required Class Time">
+                    <input type="text" name="Working" placeholder="Working Office(If Any)">
+                    <input type="submit" class="btn" value="Submit" >
+                </div> 
+                <span class="success" id="success"></span>   
+            </form>
+     
+        </div>
+        
+        </section>
+
+
+
+<!-- footer section  -->
+
+<section class="footer">
+
+    <div class="box-container">
+
+        <div class="box">
+            <h3>About us</h3>
+            <p>As dedicated academicians, our brand, standards, and long-term vision are a testament to the invaluable knowledge, cooperation, and 
+                trust provided by numerous advisors, experts, and specialists across diverse fields.
+                 Their unwavering support and expertise have been the cornerstone of our success.</p>
+        </div>
+
+       <!-- quick services ko link haru  -->
+       <div class="box">
+        <h3>Quick links</h3>
+        <a href="about.html">Teams</a>
+        <a href="teacher.html">Teachers</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="review.html">Review</a>
+    </div>
+
+         <!--Social media ko lagi hai ta-->
+         <div class="box">
+            <h3>Follow us</h3>
+            <a href="https://www.facebook.com/valleyinstitute">facebook</a>
+            <a href="https://www.instagram.com/institutevalley">instagram</a>
+        </div>
+
+
+         <!--Contact Detail KO lagi-->
+         <div class="box">
+            <h3>Contact Us</h3>
+           <p> <i class="fas fa-phone"></i> 01-5364716 </p>
+           <p> <i class="fas fa-envelope"></i> valleyinstitute15@gmail.com </p>
+           <p> <i class="fas fa-map-marker-alt"></i> Putalisadak, Kathmandu </p>
+        </div>
+
+    </div>
+
+    <div class="credit">Copyright © <a href="https://www.facebook.com/valleyinstitute/">K.T.M Valley Institute and Publication Pvt. Ltd.</a> |
+        All rights reserved <br>Powered By <a href="https://www.facebook.com/NebulaPixel">NebulaPixel Production</a>
+   </div>
+</section>
+
+</div>
+
+
+<!-- custom js file link -->
+<script src="js/script.js"></script>
+
+</body>
+</html>
