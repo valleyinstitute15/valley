@@ -14,7 +14,6 @@ window.onscroll = () =>{
 // Disable right-click context menu
 document.addEventListener("contextmenu", function(event) {
   event.preventDefault();
-  alert('Right-click is disabled on this page.');
 }, false);
 
 const scriptURL = 'https://script.google.com/macros/s/AKfycbzuPjfXx1Sq8U3RAS6IERgTehomvyml5iU2VERxfbIZiMX-uEbkVvFrL6mKGrutJXra/exec'
